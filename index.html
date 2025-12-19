@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-anim"></div>
+    
+    <div class="floating-balloons">
+        <span>🎈</span><span>✨</span><span>🎂</span><span>🎉</span><span>🎈</span>
+    </div>
+
+    <div id="intro-screen">
+        <div class="glass-card">
+            <h1>Counting down... ⏳</h1>
+            <div id="timer">Loading...</div>
+            <p>Wait for the magic moment!</p>
+        </div>
+    </div>
+
+    <div id="main-content" class="hidden">
+        
+        <div class="glass-card">
+            
+            <div class="slide active-slide" id="slide1">
+                <h1>It's Finally Time! 🎂</h1>
+                <p>The wait is over. Are you ready?</p>
+                <button class="btn" onclick="nextSlide(2)">Yes, Start! ➡️</button>
+            </div>
+
+            <div class="slide" id="slide2">
+                <h1>Wish #1 🌈</h1>
+                <p class="letter-text">
+                    "May your day be filled with smiles, and your year be filled with happiness. 
+                    I hope you wake up every day with a reason to smile."
+                </p>
+                <button class="btn" onclick="nextSlide(3)">Next ➡️</button>
+            </div>
+
+            <div class="slide" id="slide3">
+                <h1>Wish #2 🚀</h1>
+                <p class="letter-text">
+                    "I know you have big dreams. I believe in you! 
+                    This year, go crush your goals. You've got this."
+                </p>
+                <button class="btn" onclick="nextSlide(4)">Next ➡️</button>
+            </div>
+
+            <div class="slide" id="slide4">
+                <h1>Wish #3 🤝</h1>
+                <p class="letter-text">
+                    "I am so lucky to have you as a friend. Thank you for being 
+                    the amazing person that you are."
+                </p>
+                <button class="btn" onclick="nextSlide(5)">Next ➡️</button>
+            </div>
+
+            <div class="slide" id="slide5">
+                <h1>One Last Thing... 📝</h1>
+                <p class="letter-text">
+                    "No matter what happens this year, remember that I am always 
+                    in your corner cheering for you."
+                </p>
+                <button class="btn" onclick="nextSlide(6)">Next ➡️</button>
+            </div>
+
+            <div class="slide" id="slide6">
+                <h1>Happy Birthday Tanwi!! 🎁</h1>
+                <p>Make a wish and blow the candles!</p>
+                <button class="btn special-btn" onclick="celebrate()">🎉 BLOW CANDLES 🎉</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="player" style="position: absolute; top: -9999px; left: -9999px;"></div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+</body>
+</html>
